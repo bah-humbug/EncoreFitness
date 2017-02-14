@@ -1,0 +1,66 @@
+.navbar{
+    background: white;
+    max-height: 40px;
+    font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color:black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    border-bottom: 2px solid #ea6d19;
+    color: black;
+    cursor: pointer;
+    background: white;
+    
+}
+
+.navbar-inverse .navbar-nav>li>a:visited{
+    color: black;
+}
+
+ .navbar-inverse .divider-vertical:not(:last-child) {
+    border-right: 3px solid #ea6d19;
+}
+
+.navbar-inverse .divider-vertical {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.navbar-inverse{
+    border-color: white;
+}
+
+.navbar-inverse .navbar-toggle{
+    background: black;
+}
+
+/*Find an elegant way to coustomize navbar*/
+@media only screen and (max-width: 766px) {
+    .collapsing, .in {
+        background-color: #f7f7f7;
+    }
+    
+    .collapsing ul li a, .in ul li a { 
+        border-left: 3px solid #ea6d19;
+    }
+    
+    .collapsing ul li a:hover, .in ul li a:hover {
+        color: black!important;
+    }
+    
+    /*temp fix till I get new logos*/
+    .navbar-brand>img{
+        width: 150%; height: 140%;
+    }
+    
+    .navbar-inverse .divider-vertical:not(:last-child) { 
+        border-right: 0px; 
+    }
+    
+    .navbar-inverse .divider-vertical{ 
+        margin-top: 4px;
+    }
+}
